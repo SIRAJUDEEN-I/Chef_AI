@@ -38,8 +38,8 @@ export default function BodySec(){
             <h1 className="text-3xl font-bold text-[#141413]">What ingredients do you have? on mind </h1>
 
             <form action={addIngredient} className="add-ingredient-form flex justify-center gap-[12px] h-[38px] mt-10">
-                <input type="text" name="ingredient" placeholder="    eg. Oregano" className="  pl-3 border-dashed border-2 border-[#D1D5DB] rounded mr-4"/>
-                <button className=" bg-[#141413] font-medium text-white rounded-3xl pl-5 pr-5 transition-transform focus:scale-90 hover:scale-110 hover:bg-gray-800 ">+ Add Ingredients to the list</button>
+                <input type="text" name="ingredient" placeholder="    eg. Oregano" className="  pl-3 border-dashed border-2 border-[#D1D5DB] rounded mr-4 transition  focus:scale-110"/>
+                <button className=" bg-[#141413] font-medium text-white rounded-3xl pl-5 pr-5 transition hover:scale-105  ">+ Add Ingredients to the list</button>
             </form>
           
             {ingredients.length > 0 &&
