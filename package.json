@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google-ai/generativelanguage": "^3.2.0",
     "@tailwindcss/vite": "^4.1.8",
+    "google-auth-library": "^10.0.0-rc.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
@@ -24,6 +27,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "tailwindcss-motion": "^1.1.0",
     "vite": "^6.3.5"
   }
 }
