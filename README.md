@@ -1,16 +1,93 @@
-<<<<<<< HEAD
-# React + Vite
+# Chef Ai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chef Ai is a web application that suggests recipes based on the ingredients you have on hand. Powered by Google Gemini AI, it generates easy-to-follow recipes in markdown format, making it simple to cook with what you already have.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Enter a list of ingredients you have.
+- Get AI-generated recipes using Google Gemini.
+- Clean, responsive UI built with React and Tailwind CSS.
+- Recipes are formatted in markdown for easy reading.
+- Smooth animations and accessibility features.
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Chef_AI
->>>>>>> b56008878c37ccd4ab790f9e6b9d78ef09e07c1b
+![Chef Ai Screenshot](./src/assets/logo.png)
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/chef-ai.git
+   cd chef-ai
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up your environment variables:**
+
+   Create a `.env` file in the root directory and add your Google Gemini API key:
+   ```
+   VITE_API_KEY=your_gemini_api_key_here
+   ```
+
+   > You can get a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser:**
+
+   Visit [http://localhost:5173](http://localhost:5173) to use the app.
+
+## Project Structure
+
+```
+├── src/
+│   ├── components/
+│   │   └── BodySec/
+│   │       ├── BodySec.jsx
+│   │       └── AiRecipe.jsx
+│   │   └── animation/
+│   │       └── FadeContent.jsx
+│   ├── assets/
+│   ├── ai.js
+│   ├── index.css
+│   └── main.jsx
+├── .env
+├── index.html
+├── vite.config.js
+└── README.md
+```
+
+## Technologies Used
+
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [Google Gemini API](https://aistudio.google.com/app/apikey)
+- [react-markdown](https://github.com/remarkjs/react-markdown)
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**Made with ❤️ for foodies and coders!**
