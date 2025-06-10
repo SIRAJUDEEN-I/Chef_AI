@@ -56,8 +56,8 @@ export default function BodySec(){
 
                     <div className="bg-gray-200 flex flex-col rounded-2xl p-5">
                         <h3 className="mt-2 text-lg sm:text-2xl font-bold">Ready for a Recipe?</h3>
-                        <p className="mb-2">Generate a recipe with your ingredients.</p>
-                        <button className="border mt-3 bg-amber-400 transition-transform focus:scale-90 hover:scale-110 focus:ring-2 rounded-2xl focus:bg-amber-300  ml-auto  mr-auto px-5 py-[3px] md:ml-55 md:w-40 m" onClick={getRecipe}>
+                        <p className="mb-2 md:text-[20px]">Generate a recipe with your ingredients.</p>
+                        <button className="border   bg-amber-400 transition-transform focus:scale-90 hover:scale-110 focus:ring-2 rounded-2xl focus:bg-amber-300  ml-auto  mr-auto px-4 py-[3px] mt-2 md:ml-55 md:w-40 m" onClick={getRecipe}>
                             Get a Recipe
                         </button>
                     </div>
@@ -65,6 +65,9 @@ export default function BodySec(){
             }
             {recipe && <AiRecipe recipe={recipe} />}
         </main>
+
+        
+  
         
     )
 }
