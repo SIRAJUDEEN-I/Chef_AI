@@ -25,8 +25,8 @@ Chef Ai is a web application that suggests recipes based on the ingredients you 
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/chef-ai.git
-   cd chef-ai
+   git clone https://github.com/yourusername/chef_Ai.git
+   cd Chef_Ai
    ```
 
 2. **Install dependencies:**
