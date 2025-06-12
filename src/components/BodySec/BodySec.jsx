@@ -1,6 +1,5 @@
 import { useState } from "react";
-import {  getRecipeFromGemini } from "../../ai";
-// import {ingredientsList} from "../IngredientsList.jsx"
+import { getRecipeFromGemini } from "../../ai";
 import AiRecipe from "./AiRecipe.jsx";
 
 
@@ -12,6 +11,7 @@ export default function BodySec(){
     )
    const [recipe, setRecipe] = useState("")
    const [loading, setLoading] = useState(false);
+   const [error, setError] = useState("")
 
    const ingredientsListItems = ingredients.map(ingredient => (
         <li  key={ingredient}>{ingredient}</li>
@@ -23,8 +23,14 @@ export default function BodySec(){
 
      async function getRecipe() {
         setLoading(true);
+        setError(""); 
         const recipeMarkdown = await getRecipeFromGemini(ingredients);
-        setRecipe(recipeMarkdown);
+        if (!recipeMarkdown) {
+            setError("Failed to fetch recipe. Please try again.");
+            setRecipe("");
+        } else {
+            setRecipe(recipeMarkdown);
+        }
         setLoading(false);
     }
 
@@ -70,6 +76,11 @@ export default function BodySec(){
                     </div>
                 </section>
             }
+            {error && (
+                <div className="my-4 text-center text-red-600 font-semibold">
+                    {error}
+                </div>
+            )}
             {recipe && <AiRecipe recipe={recipe} />}
             {loading && (
     <div className="my-6 text-center text-blue-600 font-semibold animate-pulse">
