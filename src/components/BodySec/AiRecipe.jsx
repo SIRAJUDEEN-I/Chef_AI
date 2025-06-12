@@ -11,6 +11,7 @@ export default function AiRecipe(props) {
         if (recipeRef.current) {
             recipeRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+        
     }, [props.recipe]);
 
     return (
@@ -19,8 +20,7 @@ export default function AiRecipe(props) {
             <div
                 ref={recipeRef}
                 className="recipe-content mt-3 mb-10 p-5 bg-gray-100 rounded-lg  focus:outline-none focus:ring-2 focus:ring-blue-400"
-                tabIndex={-1}
-            >
+                tabIndex={-1}>
                 <h2 className="text-2xl font-bold mb-3 pl-auto">Recipe Instructions</h2>
                 <FadeContent>
                 <p className="text-lg">
