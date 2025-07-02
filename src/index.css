@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @plugin "tailwindcss-motion";
 
-
 *{
   box-sizing:border-box;
 }
@@ -9,7 +8,7 @@
 body {
   margin:0;
   font-family:Inter,sans-serif;
-  background-color: #FAFAF8;
+  background-color: #FFF7ED;
 }
 
 header{

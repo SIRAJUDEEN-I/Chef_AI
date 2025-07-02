@@ -43,7 +43,7 @@ export default function BodySec(){
     }
     return (
         
-        <main className="body-sec flex flex-col items-center justify-center  mt-20 w-full px-4 sm:px-8 md:px-16">
+        <main className="body-sec  flex flex-col items-center justify-center  mt-20 w-full px-4 sm:px-8 md:px-16">
             <h1 className="text-2xl sm:text-3xl font-bold text-[#141413] text-center ">What ingredients do you have? on mind </h1>
 
              <form action={addIngredient} className="add-ingredient-form flex flex-col sm:flex-row justify-center gap-4 h-auto sm:h-[38px] mt-10 w-full  max-w-xl">
